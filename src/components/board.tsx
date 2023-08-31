@@ -33,7 +33,8 @@ interface PieceProps {
 
 function Piece(props: PieceProps) {
   const { piece, x, y, onDragEnd } = props;
-  const pieceImage = pieces[piece];
+  const pieces: Record<string, string> = require("../assets/fen.json");
+  const pieceImage = pieces[piece as keyof typeof pieces];
   return (
     <motion.div
       drag
