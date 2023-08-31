@@ -117,7 +117,7 @@ function Board(props: BoardProps) {
     <div className="w-[400px] h-[400px] grid grid-cols-8 grid-rows-8">
       {squares}
       <motion.button
-        whileHover={{ scale: 1.5 }}
+        whileHover={{ scale: 1.2 }}
         whileTap={{ scale: 0.9 }}
         className="col-start-1 col-end-9 row-start-9 row-end-10 bg-slate-800 text-white p-2 mt-2 rounded-full"
         onClick={handleReset}
